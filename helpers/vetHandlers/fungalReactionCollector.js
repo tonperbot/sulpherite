@@ -72,37 +72,37 @@ async function cultReactionCollector(cli, cfg, reactionCollector){
 			} else {
 				await user.send(`We have enough rushers for this run, but thanks for your participation.`);
 			}
-		} else if (reaction.emoji.id == '679186994190090270'){ // warrior
+		} else if (reaction.emoji.id == '760021468863266817'){ // warrior
 			if (await isInOtherClasses(user.id, afkObj)){
 				await user.send(`Sorry but you cannot react with multiples classes at the same time.`);
-				let reactClass = reaction.message.reactions.cache.get('679186994190090270');
+				let reactClass = reaction.message.reactions.cache.get('760021468863266817');
 				if (reactClass != undefined) await reactClass.users.remove(user).catch(error => console.error(err));
 				return true;
 			} else {
 				await afkObj['classes']['warrior'].push(user.id);
 			}
-		} else if (reaction.emoji.id == '679187006403903509'){ // paladin
+		} else if (reaction.emoji.id == '760021397832990750'){ // paladin
 			if (await isInOtherClasses(user.id, afkObj)){
 				await user.send(`Sorry but you cannot react with multiples classes at the same time.`);
-				let reactClass = reaction.message.reactions.cache.get('679187006403903509');
+				let reactClass = reaction.message.reactions.cache.get('760021397832990750');
 				if (reactClass != undefined) await reactClass.users.remove(user).catch(error => console.error(err));
 				return true;
 			} else {
 				await afkObj['classes']['paladin'].push(user.id);
 			}
-		} else if (reaction.emoji.id == '679187016071512067'){ // knight
+		} else if (reaction.emoji.id == '760021377042087977'){ // knight
 			if (await isInOtherClasses(user.id, afkObj)){
 				await user.send(`Sorry but you cannot react with multiples classes at the same time.`);
-				let reactClass = reaction.message.reactions.cache.get('679187016071512067');
+				let reactClass = reaction.message.reactions.cache.get('760021377042087977');
 				if (reactClass != undefined) await reactClass.users.remove(user).catch(error => console.error(err));
 				return true;
 			} else {
 				await afkObj['classes']['knight'].push(user.id);
 			}
-		} else if (reaction.emoji.id == '679187016071512067'){ // priest
+		} else if (reaction.emoji.id == '760021377042087977'){ // priest
 			if (await isInOtherClasses(user.id, afkObj)){
 				await user.send(`Sorry but you cannot react with multiples classes at the same time.`);
-				let reactClass = reaction.message.reactions.cache.get('679187016071512067');
+				let reactClass = reaction.message.reactions.cache.get('760021377042087977');
 				if (reactClass != undefined) await reactClass.users.remove(user).catch(error => console.error(err));
 				return true;
 			} else {
@@ -194,22 +194,22 @@ async function cultReactionCollector(cli, cfg, reactionCollector){
 				}
 				cli.channels.cache.get(cfg.shattersServer.vetRlCommands).send(`${user} unreacted from being ${cli.emojis.cache.find(e => e.id == "686222430259380427")}.`);
 			}
-		} else if (reaction.emoji.id == '679186994190090270'){ // warrior
+		} else if (reaction.emoji.id == '760021468863266817'){ // warrior
 			let index = afkObj['classes']['warrior'].indexOf(user.id);
 			if (index > -1) {
   				afkObj['classes']['warrior'].splice(index, 1);
 			}
-		} else if (reaction.emoji.id == '679187006403903509'){ // paladin
+		} else if (reaction.emoji.id == '760021397832990750'){ // paladin
 			let index = afkObj['classes']['paladin'].indexOf(user.id);
 			if (index > -1) {
   				afkObj['classes']['paladin'].splice(index, 1);
 			}
-		} else if (reaction.emoji.id == '679187016071512067'){ // knight
+		} else if (reaction.emoji.id == '760021377042087977'){ // knight
 			let index = afkObj['classes']['knight'].indexOf(user.id);
 			if (index > -1) {
   				afkObj['classes']['knight'].splice(index, 1);
 			}
-		} else if (reaction.emoji.id == '679187025303437312'){ // priest
+		} else if (reaction.emoji.id == '760021407366381578'){ // priest
 			let index = afkObj['classes']['priest'].indexOf(user.id);
 			if (index > -1) {
   				afkObj['classes']['priest'].splice(index, 1);

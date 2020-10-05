@@ -13,10 +13,10 @@ async function afkcheck(cli, cfg, data){
 	const vcChannel = cli.channels.cache.get(cfg.shattersServer.vetVc[args[1]].id);
 	const afkChannel = cli.channels.cache.get(cfg.shattersServer.vetAfkchecks);
 	const cpChannel = cli.channels.cache.get(cfg.shattersServer.vetRlCommands);
-	const shattersAfkReactions = [...cfg.shattersHcReactions, '686223984907255808', '699664632469782599'];
-	const voidAfkReactions = [...cfg.voidHcReactions, '686223984907255808', '699664632469782599'];
-	const cultAfkReactions = [...cfg.cultHcReactions, '686223984907255808', '699664632469782599'];
-	const fungalAfkReactions = [...cfg.fungalHcReactions, '686223984907255808', '699664632469782599'];
+	const shattersAfkReactions = [...cfg.shattersHcReactions, '760024870758776833', '760024527971024927'];
+	const voidAfkReactions = [...cfg.voidHcReactions, '760024870758776833', '760024527971024927'];
+	const cultAfkReactions = [...cfg.cultHcReactions, '760024870758776833', '760024527971024927'];
+	const fungalAfkReactions = [...cfg.fungalHcReactions, '760024870758776833', '760024527971024927'];
 
 	if (!cli.guilds.cache.get(cfg.shattersServer.id).members.cache.get(data.author.id).voice.channel || cli.guilds.cache.get(cfg.shattersServer.id).members.cache.get(data.author.id).voice.channel.id != cfg.shattersServer.vetVc[args[1]].id) return data.channel.send(`i'm not sure you want to afk in a channel you're not in, safety first buddy`); 
 	// types
@@ -50,14 +50,14 @@ async function afkcheck(cli, cfg, data){
 		};
 
 		// edit undefined object variables
-		const afkMsg = await afkChannel.send(`@here Shatters (${cli.emojis.cache.get('679186863264628736')}) started by ${cli.users.cache.get(afkObj['host'])} in ${cfg.shattersServer.vetVc[args[1]].name}!`);
+		const afkMsg = await afkChannel.send(`@here Shatters (${cli.emojis.cache.get('760021427545440276')}) started by ${cli.users.cache.get(afkObj['host'])} in ${cfg.shattersServer.vetVc[args[1]].name}!`);
 		const cpMsg = await cpChannel.send(`AFK Check control panel for ${cfg.shattersServer.vetVc[args[1]].name}`);
 		afkObj['afkcheck'] = afkMsg.id;
 		afkObj['controlpanel'] = cpMsg.id;
 
 		try {
 			await shattersAfkReactions.forEach(async r => { await afkMsg.react(cli.emojis.cache.get(r))});
-			await cpMsg.react(cli.emojis.cache.get('699664632469782599'));
+			await cpMsg.react(cli.emojis.cache.get('760024527971024927'));
 		} catch(err) { console.error(err) };
 		// unlock the channel
 		await cli.channels.cache.get(cfg.shattersServer.vetVc[args[1]].id).createOverwrite(cfg.shattersServer.vetRaiderRole, { 'VIEW_CHANNEL': true, 'CONNECT': true, 'SPEAK': false });
@@ -104,7 +104,7 @@ async function afkcheck(cli, cfg, data){
 		afkObj['controlpanel'] = cpMsg.id;
 		try {
 			await voidAfkReactions.forEach(async r => { await afkMsg.react(cli.emojis.cache.get(r))});
-			await cpMsg.react(cli.emojis.cache.get('699664632469782599'));
+			await cpMsg.react(cli.emojis.cache.get('760024527971024927'));
 		} catch(err) { console.error(err) };
 		// unlock the channel
 		await cli.channels.cache.get(cfg.shattersServer.vetVc[args[1]].id).createOverwrite(cfg.shattersServer.vetRaiderRole, { 'VIEW_CHANNEL': true, 'CONNECT': true, 'SPEAK': false });
@@ -152,7 +152,7 @@ async function afkcheck(cli, cfg, data){
 
 		try {
 			await cultAfkReactions.forEach(async r => { await afkMsg.react(cli.emojis.cache.get(r))});
-			await cpMsg.react(cli.emojis.cache.get('699664632469782599'));
+			await cpMsg.react(cli.emojis.cache.get('760024527971024927'));
 		} catch(err) { console.error(err) };
 		// unlock the channel
 		await cli.channels.cache.get(cfg.shattersServer.vetVc[args[1]].id).createOverwrite(cfg.shattersServer.vetRaiderRole, { 'VIEW_CHANNEL': true, 'CONNECT': true, 'SPEAK': false });
@@ -201,7 +201,7 @@ async function afkcheck(cli, cfg, data){
 
 		try {
 			await fungalAfkReactions.forEach(async r => { await afkMsg.react(cli.emojis.cache.get(r))});
-			await cpMsg.react(cli.emojis.cache.get('699664632469782599'));
+			await cpMsg.react(cli.emojis.cache.get('760024527971024927'));
 		} catch(err) { console.error(err) };
 		// unlock the channel
 		await cli.channels.cache.get(cfg.shattersServer.vetVc[args[1]].id).createOverwrite(cfg.shattersServer.vetRaiderRole, { 'VIEW_CHANNEL': true, 'CONNECT': true, 'SPEAK': false });

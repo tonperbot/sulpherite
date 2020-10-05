@@ -17,7 +17,7 @@ async function afkUpdate(cli, cfg){
 
 		// setup portal reaction
 		var portalReact;
-		if (afk['type'] == 'shatters') portalReact = `679186863264628736`; // shatters portal
+		if (afk['type'] == 'shatters') portalReact = `760021427545440276`; // shatters portal
 		if (afk['type'] == 'void') portalReact = `686217948880568384`; // void portal
 		if (afk['type'] == 'cult') portalReact = `686217948918185994`; // cult portal
 		if (afk['type'] == 'fungal') portalReact = `686223695827828774`; // fungal portal

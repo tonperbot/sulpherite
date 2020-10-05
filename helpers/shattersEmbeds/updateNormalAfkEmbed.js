@@ -1,5 +1,5 @@
 async function updateNormalAfkEmbed(cli, cfg, afkObj){
-	const shattersReact = cli.emojis.cache.get('679186863264628736');
+	const shattersReact = cli.emojis.cache.get('760021427545440276');
 	const hostUser = cli.guilds.cache.get(cfg.shattersServer.id).members.cache.get(afkObj['host']);
 	const channelName = cli.channels.cache.get(afkObj['channel']).name;
 
@@ -17,37 +17,37 @@ async function updateNormalAfkEmbed(cli, cfg, afkObj){
 /*		fields: [
 		{
 			name: "If you are bringing a key, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679186891463196673")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "760021468863266817")}`,
 			inline: true
 		},
 		{
 			name: "If you are bringing a warrior, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679186994190090270")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "760021468863266817")}`,
 			inline: true
 		},
 		{
 			name: "If you are bringing a paladin, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679187006403903509")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "760021397832990750")}`,
 			inline: true
 		},
 		{
 			name: "If you are bringing a knight, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679187016071512067")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "760021377042087977")}`,
 			inline: true
 		},
 		{
 			name: "If you are bringing a priest, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679187025303437312")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "760021407366381578")}`,
 			inline: true
 		},
 		{
 			name: "If your ability is armor break, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679187036325937158")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "760021315015933953")}`,
 			inline: true
 		},
 		{
 			name: "If you are bringing a mystic, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679187052813746186")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "760021387674255370")}`,
 			inline: true
 		},
 		{
@@ -57,22 +57,22 @@ async function updateNormalAfkEmbed(cli, cfg, afkObj){
 		},
 		{
 			name: "If you are bringing an assassin, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679187076406575107")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "760021324902563840")}`,
 			inline: true
 		},
 		{
 			name: "If you are rushing 1st, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679187088146432040")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "762762960279437353")}`,
 			inline: true
 		},
 		{
 			name: "If you are rushing 2nd, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679187097621495820")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "762762960799006721")}`,
 			inline: true
 		},
 		{
 			name: "If you are rushing secret, react with:",
-			value: `${cli.emojis.cache.find(e => e.id == "679187105817296934")}`,
+			value: `${cli.emojis.cache.find(e => e.id == "762762961487134750")}`,
 			inline: true
 		}
 		]*/

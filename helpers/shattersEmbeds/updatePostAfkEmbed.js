@@ -1,5 +1,5 @@
 async function updatePostAfk(cli, cfg, afkObj){
-	const shattersReact = cli.emojis.cache.get('679186863264628736');
+	const shattersReact = cli.emojis.cache.get('760021427545440276');
 	const hostUser = cli.guilds.cache.get(cfg.shattersServer.id).members.cache.get(afkObj['host']);
 	const channelName = cli.channels.cache.get(afkObj['channel']).name;
 	

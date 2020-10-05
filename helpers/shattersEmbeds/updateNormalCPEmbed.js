@@ -20,7 +20,7 @@ async function updateNormalControlPanelEmbed(cli, cfg, afkObj){
 		fields: [
 		{
 			name: "Our current keys are...",
-			value: `${cli.emojis.cache.find(e => e.id === "679186891463196673")} ${keyMsg}`
+			value: `${cli.emojis.cache.find(e => e.id === "760021468863266817")} ${keyMsg}`
 		},
 		{
 			name: "Location of the run:",
@@ -28,7 +28,7 @@ async function updateNormalControlPanelEmbed(cli, cfg, afkObj){
 		},
 		{
 			name: "Our mystics are:",
-			value: `${cli.emojis.cache.find(e => e.id === "679187052813746186")} ${mysticMessage}`
+			value: `${cli.emojis.cache.find(e => e.id === "760021387674255370")} ${mysticMessage}`
 		},
 		{
 			name: "Nitro boosters with location:",

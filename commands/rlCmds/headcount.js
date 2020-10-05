@@ -1,6 +1,6 @@
 async function shattsHC(cli, cfg, data){
 	const afkChannel = cli.channels.cache.get(cfg.shattersServer.afkchecks);
-	const embed = { "title": "**Headcount for Shatters started by "+data.guild.members.cache.get(data.author.id).displayName+"!**", "color": '#008502', "timestamp": new Date(data.createdTimestamp).toISOString(), "description": `React with ${cli.emojis.cache.get('679186863264628736')} to participate and ${cli.emojis.cache.get('679186891463196673')} if you have a key and are willing to pop!` };
+	const embed = { "title": "**Headcount for Shatters started by "+data.guild.members.cache.get(data.author.id).displayName+"!**", "color": '#008502', "timestamp": new Date(data.createdTimestamp).toISOString(), "description": `React with ${cli.emojis.cache.get('760021427545440276')} to participate and ${cli.emojis.cache.get('760021468863266817')} if you have a key and are willing to pop!` };
 	const headCountMsg = await afkChannel.send({ embed });
 
 	// ghostping here
