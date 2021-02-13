@@ -114,10 +114,6 @@ async function commands(cli, cfg, data){
 					return require('./rlCmds/afkcheck.js')(cli, cfg, data);
 				}
 				break;
-		// Useless commands
-			case 'skriller': case 'skrillergg':
-				return data.channel.send({ files: ["../Cheems/trash/skriller.png"]});
-				break;
 		}
 	}
 }
